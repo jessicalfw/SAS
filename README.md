@@ -8,10 +8,10 @@ Two SAS Projects:
   
     c. Lastly, a user should be able to dynamically input a specific state value and answer the following:
     
-      i. What are the frequency values for Claim_Type for the selected state?
-      ii. What are the frequency values for Claim_Site for the selected state?
-      iii. What are the frequency values for Disposition for the selected state?
-      iv. What is the mean, minimum, maximum, and sum of Close_Amount for the selected state?
+          i. What are the frequency values for Claim_Type for the selected state?
+          ii. What are the frequency values for Claim_Site for the selected state?
+          iii. What are the frequency values for Disposition for the selected state?
+          iv. What is the mean, minimum, maximum, and sum of Close_Amount for the selected state?
 
 
 2. Tourism Case Study: Create a merged table Final_Tourism and answer the following questions
