@@ -14,5 +14,5 @@ Two SAS Projects:
 2. Create a merged table Final_Tourism and answer the following questions
    1. What continent has the highest average number of arrivals for 2014?
    2. What was the overall mean tourism expenditure in other countries for 2014?
-   3. 
+   
 
