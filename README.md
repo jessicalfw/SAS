@@ -15,7 +15,7 @@ Two SAS Projects:
       iv. What is the mean, minimum, maximum, and sum of Close_Amount for the selected state?
 
 
-2. Create a merged table Final_Tourism and answer the following questions
+2. Tourism Case Study: Create a merged table Final_Tourism and answer the following questions
 
    a. What continent has the highest average number of arrivals for 2014?
 
