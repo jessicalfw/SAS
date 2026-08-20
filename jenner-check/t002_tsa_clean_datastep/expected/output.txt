@@ -1,0 +1,40 @@
+
+  Obs   Claim_Number  Date_Received  Incident_Date  Airport_Code                  Airport_Name       Claim_Type       Claim_Site                Item_Category  Claim_Amount    Status  Close_Amount              Disposition  State      StateName   Date_Issues
+    1  1999120100002      01DEC1999      28NOV1999  JFK           John F Kennedy International  Unknown          Checked Baggage  Luggage                                90  Settled         $60.00  Settle                   NY     New York       Needs Review
+    2  2003060800009      08JUN2003      10JUN2003  DEN           Denver International          Unknown          Checked Baggage  -                                     110  Denied           $0.00  Deny                     CO     Colorado       Needs Review
+    3  2003081603783      16AUG2003      06AUG2003  HNL           Honolulu International        Unknown          Checked Baggage  -                                     150  Settled        $100.00  Settle                   HI     Hawaii
+    4  2003100440953      22OCT2003      17OCT2003  HNL           Honolulu International        Property Damage  Checked Baggage  Cosmetics/Grooming Products            50  Approved        $50.00  Approve in Full          HI     Hawaii
+    5  2005042212345      22APR2005      20APR2005  LAX           Los Angeles International     Unknown          Checked Baggage  Jewelry & Watches                     300  Denied           $0.00  Deny                     CA     California
+    6  2007030300004      03MAR2007      05MAR2007  HNL           Honolulu International        Unknown          Checked Baggage  Electronics                           180  Denied           $0.00  Deny                     HI     Hawaii         Needs Review
+    7  2008090500006      05SEP2008      01SEP2008  HNL           Honolulu International        Unknown          Motor Vehicle    Cosmetics/Grooming Products            40  Settled         $25.00  Closed:Contractor Claim  HI     Hawaii
+    8  2009081000012      10AUG2009      09AUG2009  HNL           Honolulu International        Unknown          Checked Baggage  Cosmetics/Grooming Products            35  Settled         $20.00  Settle                   HI     Hawaii
+    9  2010010500001      05JAN2010      03JAN2010  ORD           Chicago O'Hare International  Unknown          Checkpoint       Electronics                           220  Approved       $220.00  Approve in Full          IL     Illinois
+   10  2011110600007      06NOV2011      02NOV2011  BOS           Boston Logan International    Unknown          Checked Baggage  Jewelry & Watches                     500  Approved       $500.00  Approve in Full          MA     Massachusetts
+   11  2014010700008      07JAN2014      06JAN2014  HNL           Honolulu International        Unknown          Checked Baggage  Electronics                            60  Settled         $40.00  Closed:Canceled          HI     Hawaii
+   12  2016020200003      02FEB2016      30JAN2016  SEA           Seattle-Tacoma International  Unknown          Checked Baggage  -                                      75  Approved        $75.00  Approve in Full          WA     Washington
+   13  2017123100010      31DEC2017      29DEC2017  HNL           Honolulu International        Unknown          Checked Baggage  Luggage                                95  Approved        $95.00  Approve in Full          HI     Hawaii
+
+                                                   The FREQ Procedure
+
+Claim Site         Frequency
+-----------------------------
+Checked Baggage           11
+Checkpoint                 1
+Motor Vehicle              1
+
+Disposition                Frequency
+-------------------------------------
+Approve in Full                    5
+Deny                               3
+Settle                             3
+Closed:Canceled                    1
+Closed:Contractor Claim            1
+
+Claim Type         Frequency
+-----------------------------
+Unknown                   12
+Property Damage            1
+
+Date_Issues     Frequency
+--------------------------
+Needs Review            3

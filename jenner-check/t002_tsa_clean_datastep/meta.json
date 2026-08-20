@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_tsa_clean_datastep",
+  "source_file": "TSA.sas",
+  "source_blob_sha": "b8df5fe9956b4bbbc8e26960e19a39525c86684a",
+  "source_commit": "e9499849f4fa806b64737cb7154314f8dda5be3c",
+  "notes": "Data-cleaning stage of TSA.sas: dedup + sort by Incident_Date, then the DATA step that normalizes Claim_Site/Disposition/Claim_Type, upcases State, propcases StateName, flags Date_Issues, and applies labels/formats, followed by the cleaned-data PROC FREQ -- logic unchanged. Same inline-DATALINES substitution as t001 (the runner uploads script text only, no data files) for the original PROC IMPORT off ~/ECRB94/data. Left the substr(Claim_Type,1,index(Claim_Type,\"/\")-1) logic byte-for-byte as written; on rows with no \"/\" this currently resolves to a negative SUBSTR length that Jenner accepts silently (see the regression test filed for this run) rather than the ERROR + _ERROR_=1 real SAS 9.4 documents for that case -- the bundle still passes because it pins Jenner's current (buggy) output, not because the construct is unproblematic."
+}

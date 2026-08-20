@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_tourism_merge_analysis",
+  "source_file": "tourism.sas",
+  "source_blob_sha": "71166cd267b50b9b9a4c04029cb09f496a0440b0",
+  "source_commit": "e9499849f4fa806b64737cb7154314f8dda5be3c",
+  "notes": "The 'Create Final_Tourism table' stage of tourism.sas (PROC FORMAT for continent_fmt, PROC SORT, the two MERGE...BY Country data steps producing Final_Tourism and NoCountryFound, PROC FREQ on Category, PROC MEANS with CLASS Continent) copied verbatim. The original built its cleaned_tourism/country_info inputs from libname cr pointed at ~/ECRB94/data (cr.tourism, cr.country_info) via a DATA _null_/fill-down pass earlier in the file that has its own typos (`them` instead of `then`) unrelated to this stage; substituted here with small inline DATALINES shaped like the columns that earlier stage produces (Country_Name/Tourism_Type/Category/Series/Y2014 and Country/Continent), including one country (Nomanistan) deliberately absent from country_info so NoCountryFound has a row to find."
+}

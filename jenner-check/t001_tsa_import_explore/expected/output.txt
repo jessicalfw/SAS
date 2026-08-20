@@ -1,0 +1,102 @@
+
+  Obs   Claim_Number  Date_Received  Incident_Date  Airport_Code                  Airport_Name                       Claim_Type       Claim_Site                Item_Category  Claim_Amount    Status  Close_Amount              Disposition       County         City  State      StateName
+    1  2003100440953          16000          15995  HNL           Honolulu International        Property Damage/Personal Injury  Checked Baggage  Cosmetics/Grooming Products            50  Approved            50  Approve in Full          Honolulu     Honolulu     HI     Hawaii
+    2  2003081603783          15933          15923  HNL           Honolulu International        Property Damage                  Checked Baggage  -                                     150  Settled            100  Settle                   Honolulu     Honolulu     HI     Hawaii
+    3  2005042212345          16548          16546  LAX           Los Angeles International     -                                Checked Baggage  Jewelry & Watches                     300  Denied               0  Deny                     Los Angeles  Los Angeles  CA     California
+    4  2010010500001          18267          18265  ORD           Chicago O'Hare International  Passenger Property Loss          Checkpoint       Electronics                           220  Approved           220  Approve in Full          Cook         Chicago      IL     Illinois
+    5  1999120100002          14579          14576  JFK           John F Kennedy International  Property Damage                  Checked Baggage  Luggage                                90  Settled             60  Settle                   Queens       New York     NY     New York
+    6  2016020200003          20486          20483  SEA           Seattle-Tacoma International  Property Damage                  Checked Baggage  -                                      75  Approved            75  Approve in Full          King         Seattle      WA     Washington
+    7  2007030300004          17228          17230  HNL           Honolulu International        Property Damage                  Checked Baggage  Electronics                           180  Denied               0  Deny                     Honolulu     Honolulu     HI     Hawaii
+    8  2008090500006          17780          17776  HNL           Honolulu International        Property Damage                  Motor Vehicle    Cosmetics/Grooming Products            40  Settled             25  losed: Contractor Claim  Honolulu     Honolulu     HI     Hawaii
+    9  2011110600007          18937          18933  BOS           Boston Logan International    Property Damage                  Checked Baggage  Jewelry & Watches                     500  Approved           500  Approve in Full          Suffolk      Boston       MA     Massachusetts
+   10  2014010700008          19730          19729  HNL           Honolulu International        Property Damage                  Checked Baggage  Electronics                            60  Settled             40  Closed: Canceled         Honolulu     Honolulu     HI     Hawaii
+   11  2003060800009          15864          15866  DEN           Denver International          Property Damage                  Checked Baggage  -                                     110  Denied               0  Deny                     Denver       Denver       CO     Colorado
+   12  2017123100010          21184          21182  HNL           Honolulu International        Property Damage                  Checked Baggage  Luggage                                95  Approved            95  Approve in Full          Honolulu     Honolulu     HI     Hawaii
+   13  2009081000012          18119          18118  HNL           Honolulu International        Property Damage                  Checked Baggage  Cosmetics/Grooming Products            35  Settled             20  Settle                   Honolulu     Honolulu     HI     Hawaii
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: tsa_claims
+Observations:  13
+Variables:     16
+
+Variables (in creation order):
+
+  #  Variable       Type    Len  Format  Label
+---  -------------  ----  -----  ------  -----
+  1  Claim_Number    Num      8          
+  2  Date_Received   Num      8          
+  3  Incident_Date   Num      8          
+  4  Airport_Code   Char      3          
+  5  Airport_Name   Char     40          
+  6  Claim_Type     Char     32          
+  7  Claim_Site     Char     15          
+  8  Item_Category  Char     27          
+  9  Claim_Amount    Num      8          
+ 10  Status         Char      8          
+ 11  Close_Amount    Num      8          
+ 12  Disposition    Char     23          
+ 13  County         Char     11          
+ 14  City           Char     11          
+ 15  State          Char      2          
+ 16  StateName      Char     13          
+
+-------------------------------------------------------------------------------
+
+                                                   The FREQ Procedure
+
+Claim_Site         Frequency
+-----------------------------
+Checked Baggage           11
+Checkpoint                 1
+Motor Vehicle              1
+
+Disposition                Frequency
+-------------------------------------
+Approve in Full                    5
+Closed: Canceled                   1
+Deny                               3
+Settle                             3
+losed: Contractor Claim            1
+
+Claim_Type                         Frequency
+---------------------------------------------
+-                                          1
+Passenger Property Loss                    1
+Property Damage                           10
+Property Damage/Personal Injury            1
+
+Date_Received    Frequency
+---------------------------
+1999                     1
+2003                     3
+2005                     1
+2007                     1
+2008                     1
+2009                     1
+2010                     1
+2011                     1
+2014                     1
+2016                     1
+2017                     1
+
+Incident_Date    Frequency
+---------------------------
+1999                     1
+2003                     3
+2005                     1
+2007                     1
+2008                     1
+2009                     1
+2010                     1
+2011                     1
+2014                     1
+2016                     1
+2017                     1
+
+  Obs   Claim_Number  Date_Received  Incident_Date  Airport_Code            Airport_Name       Claim_Type       Claim_Site  Item_Category  Claim_Amount  Status  Close_Amount  Disposition    County      City  State  StateName
+    7  2007030300004      03MAR2007      05MAR2007  HNL           Honolulu International  Property Damage  Checked Baggage  Electronics             180  Denied             0  Deny         Honolulu  Honolulu  HI     Hawaii
+   11  2003060800009      08JUN2003      10JUN2003  DEN           Denver International    Property Damage  Checked Baggage  -                       110  Denied             0  Deny         Denver    Denver    CO     Colorado
+

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_tsa_import_explore",
+  "source_file": "TSA.sas",
+  "source_blob_sha": "b8df5fe9956b4bbbc8e26960e19a39525c86684a",
+  "source_commit": "e9499849f4fa806b64737cb7154314f8dda5be3c",
+  "notes": "Import + explore stage of TSA.sas (PROC PRINT(obs=20), PROC CONTENTS, PROC FREQ on raw fields, PROC PRINT of date-order anomalies -- logic unchanged). The original PROC IMPORT read a CSV via a libname pointed at ~/ECRB94/data on the author's machine; since the jenner-check runner uploads script text only (no data files), the import step is replaced with an inline pipe-delimited DATALINES block matching the same 16 columns their PROC IMPORT produces. 13 rows, two deliberately given Incident_Date after Date_Received so the closing PROC PRINT where-clause has something to find, matching the row count/shape their real CSV would produce for that check."
+}

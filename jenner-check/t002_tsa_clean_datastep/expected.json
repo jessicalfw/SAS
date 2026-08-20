@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-08-20T09:30:00Z",
+  "_captured_run_id": "r_34dbc0c60f884d68ac4ec6a3bad1a9a6",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote tsa_claims (13 rows, 16 columns).",
+    "NOTE: Wrote tsa_nodupkey (13 rows, 16 columns).",
+    "NOTE: Wrote claims_cleaned (13 rows, 15 columns).",
+    "NOTE: PROC PRINT completed: 13 observations printed, 15 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

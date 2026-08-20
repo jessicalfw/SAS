@@ -1,0 +1,37 @@
+
+  Obs        Country      Tourism_Type    Category                Series      Y2014      Continent
+    1  Brazil         Inbound tourism   Arrivals    NUMBER OF ARRIVALS      6429852  South America
+    2  Egypt          Inbound tourism   Arrivals    NUMBER OF ARRIVALS      9908000         Africa
+    3  France         Inbound tourism   Arrivals    NUMBER OF ARRIVALS     83700000         Europe
+    4  France         Inbound tourism   Arrivals    TOURISM EXPENDITURE    66116000         Europe
+    5  Japan          Inbound tourism   Arrivals    NUMBER OF ARRIVALS     13413000           Asia
+    6  Japan          Outbound tourism  Departures  NUMBER OF DEPARTURES   16903000           Asia
+    7  Nigeria        Inbound tourism   Arrivals    NUMBER OF ARRIVALS      5548000         Africa
+    8  United States  Inbound tourism   Arrivals    NUMBER OF ARRIVALS     74757900  North America
+    9  United States  Inbound tourism   Arrivals    TOURISM EXPENDITURE   215760000  North America
+   10  United States  Outbound tourism  Departures  NUMBER OF DEPARTURES   68967000  North America
+
+  Obs     Country     Tourism_Type  Category              Series  Y2014  Continent
+    1  Nomanistan  Inbound tourism  Arrivals  NUMBER OF ARRIVALS  12345          .
+
+                                                   The FREQ Procedure
+
+                                        Cumulative    Cumulative
+Category      Frequency    Percent     Frequency      Percent
+-------------------------------------------------------------------
+Arrivals              8     80.00            8        80.00
+Departures            2     20.00           10       100.00
+                                                  The MEANS Procedure
+
+                                               Analysis Variable : Y2014
+
+                                               N
+                            Continent        Obs           Mean       Minimum        Maximum
+                            ----------------------------------------------------------------
+                            North America      2      145258950      74757900      215760000
+                            South America      1        6429852       6429852        6429852
+                            Europe             2       74908000      66116000       83700000
+                            Africa             2        7728000       5548000        9908000
+                            Asia               1       13413000      13413000       13413000
+                            ----------------------------------------------------------------
+
