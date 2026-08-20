@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_tsa_state_analysis",
+  "source_file": "TSA.sas",
+  "source_blob_sha": "b8df5fe9956b4bbbc8e26960e19a39525c86684a",
+  "source_commit": "e9499849f4fa806b64737cb7154314f8dda5be3c",
+  "notes": "Full analyze-data stage of TSA.sas: date-issues summary, claims-by-year FREQ, and the %let selected_state=Hawaii breakdown (Claim_Type/Claim_Site/Disposition FREQ plus PROC MEANS mean/min/max/sum on Close_Amount), all still WHERE-filtered exactly as written. Same inline-DATALINES substitution as t001/t002 for the original PROC IMPORT off ~/ECRB94/data. Dropped only the ODS PDF wrapper (ods pdf file=..., ods graphics on, plots=freqplot) since that's an output-destination concern, not analysis logic; every PROC statement, WHERE clause and macro variable is unchanged."
+}
